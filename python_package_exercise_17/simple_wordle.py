@@ -24,10 +24,10 @@ class SimpleWordle:
 
     def play(self):
         while self.attempts < 6:
-            user_guess = input(f"Attempt {self.attempts + 1}/6: Enter your guess: ")
+            user_guess = input(f"Attempt {self.attempts + 1}/6: Enter your guess: ").upper()
             feedback = self.guess(user_guess)
             print(feedback)
-            if user_guess == self.target_word:
+            if user_guess == self.target_word:  # This comparison is now case-insensitive
                 print(f"Congratulations! You've guessed the word in {self.attempts} attempts.")
                 return
         print(f"Sorry, you didn't guess the word. The correct word was {self.target_word}.")
