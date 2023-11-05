@@ -11,6 +11,8 @@ def test_guess ( ):
     assert game.guess ( "sToCK" ) == "🟩🟩⬛⬛🟩"
     assert game.guess ( "sock" ) == "Invalid word length."
 
+    file.close
+
 def test_play ( ):
     pass
 
