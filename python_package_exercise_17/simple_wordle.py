@@ -29,8 +29,9 @@ class SimpleWordle:
             print(feedback)
             if user_guess == self.target_word:  # This comparison is now case-insensitive
                 print(f"Congratulations! You've guessed the word in {self.attempts} attempts.")
-                return
+                return 1
         print(f"Sorry, you didn't guess the word. The correct word was {self.target_word}.")
+        return 0
 
 # A function to create and start the game
 def start_game(word_list_path='word_list.txt'):
@@ -38,6 +39,7 @@ def start_game(word_list_path='word_list.txt'):
         word_list = file.read().splitlines()
     game = SimpleWordle(word_list)
     game.play()
+    return 0
 
 # A function to add a word to the word list
 def add_word(word, word_list_path):
