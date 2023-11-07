@@ -42,13 +42,14 @@ def start_game(word_list_path='word_list.txt'):
     return 0
 
 # A function to add a word to the word list
-def add_word(word, word_list_path):
+def add_word(word, word_list_path='word_list.txt'):
     with open(word_list_path, 'a') as file:
         file.write(f"{word.upper()}\n")
     print(f"Added {word.upper()} to the word list.")
+    return 0
 
 # A function to remove a word from the word list
-def remove_word(word, word_list_path):
+def remove_word(word, word_list_path='word_list.txt'):
     with open(word_list_path, 'r') as file:
         words = file.read().splitlines()
     if word.upper() in words:
@@ -56,8 +57,10 @@ def remove_word(word, word_list_path):
         with open(word_list_path, 'w') as file:
             file.writelines("\n".join(words))
         print(f"Removed {word.upper()} from the word list.")
+        return 0
     else:
         print(f"{word.upper()} was not found in the word list.")
+        return 1
 
 # A function to show the word list
 def show_word_list(word_list_path):
