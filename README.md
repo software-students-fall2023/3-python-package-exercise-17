@@ -2,13 +2,14 @@
 
 A little exercise to create a Python package, build it, test it, distribute it, and use it. See [instructions](./instructions.md) for details.
 
-![Github badge displaying the build status of this repository](https://github.com/software-students-fall2023/3-python-package-exercise-17/actions/workflows/python-app.yml/badge.svg)
+[![GitHub Actions Demo Badge](https://github.com/software-students-fall2023/3-python-package-exercise-17/actions/workflows/github-actions-demo.yml/badge.svg)](https://github.com/software-students-fall2023/3-python-package-exercise-17/actions/workflows/github-actions-demo.yml)
 
 
 ## Authors
 Ethan Delgado: ethan-delgado
 Eric Cho: ec3566
 Chang Liu: Lcccc123/cl5706
+Kieren Gill: ksg7699
 ## App discription
 A simple Wordle-like game to play in the terminal.
 
