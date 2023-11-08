@@ -7,8 +7,8 @@ A little exercise to create a Python package, build it, test it, distribute it, 
 
 ## Authors
 Ethan Delgado: ethan-delgado
-?: ec3566
-?: Lcccc123
+Eric Cho: ec3566
+Chang Liu: Lcccc123
 ## App discription
 A simple Wordle-like game to play in the terminal.
 
