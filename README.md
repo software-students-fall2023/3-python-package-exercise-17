@@ -8,7 +8,7 @@ A little exercise to create a Python package, build it, test it, distribute it, 
 ## Authors
 Ethan Delgado: ethan-delgado
 Eric Cho: ec3566
-Chang Liu: Lcccc123
+Chang Liu: Lcccc123/cl5706
 ## App discription
 A simple Wordle-like game to play in the terminal.
 
@@ -121,6 +121,6 @@ show_word_list()
 
 # Start the game with the word list
 start_game()
-
+```
 
 [Link to PYPI webpage of the app](https://pypi.org/project/3-python-package-exercise-17/0.1.0/)
