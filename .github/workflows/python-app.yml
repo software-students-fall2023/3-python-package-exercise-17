@@ -14,10 +14,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Install pyenv
+      run: |
+        git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+        echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+        echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+        echo 'eval "$(pyenv init --path)"' >> ~/.bashrc
+        exec $SHELL
 
     - name: Python
       run: |
-        pip install pyenv
         pyenv install --skip-existing 3.1.5
         pyenv install 3.1.5
     - name: Install Dependencies
