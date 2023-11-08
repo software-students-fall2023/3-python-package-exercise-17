@@ -15,11 +15,11 @@ jobs:
 
     steps:
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ matrix.python-version }}
-
+    - name: Python
+      run: |
+        pip install pyenv
+        pyenv install --skip-existing 3.1.5
+        pyenv install 3.1.5
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
